@@ -1,0 +1,127 @@
+body{
+
+    background: #21333D;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+}
+
+#container{
+
+    background:rgba(128, 128, 128, 0);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+#title{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20pt;
+    margin: 0px;
+    padding: 10px;
+}
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 22pt;
+    color: white;
+    text-align: center;
+
+    background: #32424F;
+    width: 500px;
+    margin: 0px;
+    padding: 15px;
+    border-radius: 50px;
+    border: 2px solid #0089EC;
+}
+#divTitle{
+    background: rgba(255, 0, 0, 0);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#divInf{
+    background: rgba(132, 132, 175, 0);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#divinfAboutTaks{
+    background: rgba(0, 128, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+}
+#divTask1{
+    background: rgba(0, 0, 0, 0);
+    width: 400px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+#divTask2{
+    background: rgba(0, 0, 0, 0);
+    width: 400px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 20px;
+
+    display: none;
+    flex-direction: column;
+}
+#imgTasks{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin: auto;
+    position: relative;
+}
+#divText-btn-Task1{
+    background: #32424F ;
+    width: 300px;
+    height: 270px;
+    margin: auto;
+    margin-top: -80px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+#textTask{
+
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 22pt;
+    letter-spacing: 1px;
+
+}
+#btnLinkViewTask{
+
+    background: #0089EC;
+    color: white;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: .4s;
+}
+#btnLinkViewTask:hover{
+    background: #41affd;
+    transform: scale(1.1);
+}
