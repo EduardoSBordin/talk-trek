@@ -1,0 +1,76 @@
+body{
+
+    background: #21333D;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+}
+
+#container{
+
+    background:grey;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+#title{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20pt;
+    margin: 0px;
+    padding: 10px;
+    margin-left: 100px;
+}
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 22pt;
+    color: white;
+    text-align: center;
+    background: #32424F;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 50px;
+    border: 2px solid #0089EC;
+}
+#divTitle{
+    background: rgba(255, 0, 0, 0);
+}
+#divInf{
+    background: rgba(132, 132, 175, 0);
+}
+#divinfAboutTaks{
+    background: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+}
+#divTaks1{
+    background: black;
+    width: 400px;
+    height: auto;
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+#imgTasks{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: auto;
+    position: relative;
+}
+#divText-btn-Task1{
+    background: #32424F ;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-top: -80px;
+    border-radius: 30px;
+}
