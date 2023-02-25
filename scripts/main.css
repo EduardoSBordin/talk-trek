@@ -10,7 +10,7 @@ body{
 
 #container{
 
-    background:grey;
+    background:rgba(128, 128, 128, 0);
     width: 100%;
     height: auto;
     display: flex;
@@ -43,34 +43,66 @@ h1{
     background: rgba(132, 132, 175, 0);
 }
 #divinfAboutTaks{
-    background: green;
+    background: rgba(0, 128, 0, 0);
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 10px;
     margin: auto;
+    margin-top: 20px;
 }
-#divTaks1{
-    background: black;
+#divTask{
+    background: rgba(0, 0, 0, 0);
     width: 400px;
     height: auto;
     margin-left: 10px;
+    margin-top: 20px;
 
     display: flex;
     flex-direction: column;
 }
 #imgTasks{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 20px;
     margin: auto;
     position: relative;
 }
 #divText-btn-Task1{
     background: #32424F ;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 270px;
     margin: auto;
     margin-top: -80px;
-    border-radius: 30px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+#textTask{
+
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 22pt;
+    letter-spacing: 1px;
+
+}
+#btnLinkViewTask{
+
+    background: #0089EC;
+    color: white;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: .4s;
+}
+#btnLinkViewTask:hover{
+    background: #41affd;
+    transform: scale(1.1);
 }
