@@ -22,25 +22,33 @@ body{
     font-size: 20pt;
     margin: 0px;
     padding: 10px;
-    margin-left: 100px;
 }
 h1{
     font-family: 'Rubik', sans-serif;
     font-size: 22pt;
     color: white;
     text-align: center;
+
     background: #32424F;
     width: 500px;
-    margin: auto;
+    margin: 0px;
     padding: 15px;
     border-radius: 50px;
     border: 2px solid #0089EC;
 }
 #divTitle{
     background: rgba(255, 0, 0, 0);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #divInf{
     background: rgba(132, 132, 175, 0);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #divinfAboutTaks{
     background: rgba(0, 128, 0, 0);
@@ -48,6 +56,7 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     padding: 10px;
     margin: auto;
     margin-top: 20px;
