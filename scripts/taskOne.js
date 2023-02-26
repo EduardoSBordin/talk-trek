@@ -2,8 +2,13 @@ const radioAnswer1 = document.querySelector('#radioAnswer1');
 const radioAnswer2 = document.querySelector('#radioAnswer2');
 const radioAnswer3 = document.querySelector('#radioAnswer3');
 
+const divTask1 = document.querySelector('#divTask1');
+const divTask2 = document.querySelector('#divTask2');
+
 const btnCheck = document.querySelector('#btnCheck');
 btnCheck.disabled = true;
+
+const btnCheck2 = document.querySelector('#btnCheck2');
 
 const checkAnswer = document.querySelector('#checkAnswer');
 
@@ -30,6 +35,8 @@ function checkingAnswer(){
         checkAnswer.appendChild(createA);
         checkAnswer.style.color = '#00FF5F';
 
+        divTask1.style.display = 'none';
+        divTask2.style.display = 'flex';
     }
 
     if(radioAnswer2.checked){
@@ -75,5 +82,17 @@ function checkingAnswer(){
 btnCheck.addEventListener('click', () => {
 
     checkingAnswer();
+
+    // divTask1.style.display = 'none';
+    // divTask2.style.display = 'flex';
+
+})
+
+btnCheck2.addEventListener('click', () => {
+
+    checkingAnswer();
+
+    divTask1.style.display = 'flex';
+    divTask2.style.display = 'none';
 
 })

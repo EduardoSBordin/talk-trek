@@ -56,7 +56,7 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     padding: 10px;
     margin: auto;
     margin-top: 0px;
@@ -149,7 +149,7 @@ input[type=radio]:checked{
 #radioAnswer3::before{
     content: 'Rat';
 }
-#btnCheck{
+#btnCheck, #btnCheck2{
 
     background: #0089EC;
     color: white;
@@ -163,7 +163,7 @@ input[type=radio]:checked{
     margin: auto;
     cursor: pointer;
 }
-#btnCheck:hover{
+#btnCheck:hover, #btnCheck2:hover{
     background: #41affd;
 }
 #checkAnswer{
