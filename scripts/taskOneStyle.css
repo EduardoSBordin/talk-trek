@@ -20,8 +20,8 @@ body{
     color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 20pt;
-    margin: 0px;
     padding: 10px;
+    margin: auto;
 }
 h1{
     font-family: 'Rubik', sans-serif;
@@ -41,7 +41,6 @@ h1{
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 #divInf{
     background: rgba(0, 0, 150, 0);
@@ -149,6 +148,16 @@ input[type=radio]:checked{
 #radioAnswer3::before{
     content: 'Rat';
 }
+
+#radioAnswer4::before{
+    content: 'Monkey';
+}
+#radioAnswer5::before{
+    content: 'Bird';
+}
+#radioAnswer6::before{
+    content: 'Sheep';
+}
 #btnCheck, #btnCheck2{
 
     background: #0089EC;
@@ -169,8 +178,15 @@ input[type=radio]:checked{
 #checkAnswer{
     color: white;
     text-align: center;
-    margin-top: 10px;
+    margin-top: -10px;
     font-family: 'Rubik', sans-serif;
     font-size: 14pt;
     text-transform: uppercase;
+}
+#score{
+
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16pt;
+    margin: auto;
 }
