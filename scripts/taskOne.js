@@ -195,6 +195,7 @@ btnCheck2.addEventListener('click', () => {
 
 })
 score.innerHTML = localStorage.getItem('scoreUser');
+
 btnRemoveLastScore.addEventListener('click', () => {
 
     score.innerHTML ='0';
