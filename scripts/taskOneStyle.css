@@ -34,7 +34,7 @@ h1{
     margin: 0px;
     padding: 15px;
     border-radius: 50px;
-    border: 2px solid #0089EC;
+    /* border: 1px solid #0089EC; */
 }
 #divTitle{
     background: rgba(255, 0, 0, 0);
@@ -44,7 +44,7 @@ h1{
     justify-content: center;
 }
 #divInf{
-    background: rgba(132, 132, 175, 0);
+    background: rgba(0, 0, 150, 0);
 
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +59,7 @@ h1{
     flex-direction: row;
     padding: 10px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 #divTask1{
     background: rgba(0, 0, 0, 0);
@@ -87,11 +87,12 @@ h1{
     border-radius: 20px;
     margin: auto;
     position: relative;
+    margin-top: -20px;
 }
 #divText-btn-Task1{
     background: #32424F ;
     width: 300px;
-    height: 270px;
+    height: 280px;
     margin: auto;
     margin-top: -80px;
     border-radius: 20px;
@@ -99,29 +100,76 @@ h1{
     display: flex;
     flex-direction: column;
 }
-#textTask{
-
-    color: white;
-    margin-top: 100px;
-    text-align: center;
-    font-size: 22pt;
-    letter-spacing: 1px;
-
+#divRadiosAnswers{
+    background: rgba(222, 184, 135, 0);
+    width: 100%;
+    height: auto;
+    margin-top: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-#btnLinkViewTask{
+input[type=radio]{
+
+    -webkit-appearance: none;
+    appearance: none;
+    background: #bb030300;
+    color: #BCC3C8;
+    margin: 5px;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 12pt;
+    letter-spacing: 2px;
+
+    text-align: center;
+    padding: 5px;
+
+    width: 120px;
+    height: 35px;
+    border-radius: 50px;
+    border: 2px solid #BCC3C8;
+
+    transition: .3s;
+
+    cursor: pointer;
+}
+input[type=radio]:checked{
+    background: #00CD4C;
+    color: white;
+    border: 2px solid  #00FF5F;
+}
+#radioAnswer1::before{
+    content: 'Dog';
+}
+#radioAnswer2::before{
+    content: 'Cow';
+}
+#radioAnswer3::before{
+    content: 'Rat';
+}
+#btnCheck{
 
     background: #0089EC;
     color: white;
+    font-family: 'Rubik', sans-serif;
     width: 100px;
-    height: 20px;
-    padding: 10px;
-    text-align: center;
-    margin: auto;
-    text-decoration: none;
+    height: 30px;
+    border: none;
     border-radius: 50px;
     transition: .4s;
+    margin: auto;
+    cursor: pointer;
 }
-#btnLinkViewTask:hover{
+#btnCheck:hover{
     background: #41affd;
-    transform: scale(1.1);
+}
+#checkAnswer{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14pt;
+    text-transform: uppercase;
 }
