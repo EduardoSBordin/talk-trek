@@ -95,4 +95,8 @@ btnCheck2.addEventListener('click', () => {
     divTask1.style.display = 'flex';
     divTask2.style.display = 'none';
 
+    radioAnswer1.checked = false;
+    radioAnswer2.checked = false;
+    radioAnswer3.checked = false;
+
 })
