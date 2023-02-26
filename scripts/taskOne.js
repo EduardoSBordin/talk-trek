@@ -17,6 +17,8 @@ btnCheck.disabled = true;
 const btnCheck2 = document.querySelector('#btnCheck2');
 btnCheck2.disabled = true;
 
+const btnRemoveLastScore = document.querySelector('#btnRemoveLastScore');
+
 const checkAnswer = document.querySelector('#checkAnswer');
 
 let timerCheckAnswer = 10;
@@ -193,3 +195,9 @@ btnCheck2.addEventListener('click', () => {
 
 })
 score.innerHTML = localStorage.getItem('scoreUser');
+btnRemoveLastScore.addEventListener('click', () => {
+
+    score.innerHTML ='0';
+    localStorage.clear();
+    scoreNum = 0;
+});
