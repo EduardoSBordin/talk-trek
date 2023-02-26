@@ -31,7 +31,9 @@ function btnC(){
         btnCheck2.disabled = false;
     }
 }
-document.querySelector('body').addEventListener('click', () => {btnC()});
+document.querySelector('body').addEventListener('click', () => {
+    btnC()
+});
 
 function checkingAnswer1(){
     
@@ -158,9 +160,16 @@ function checkingAnswer2(){
 
 }
 
+function getScore(){
+
+    localStorage.setItem('scoreUser', scoreNum);
+    score.innerHTML = localStorage.getItem('scoreUser');
+}
+
 btnCheck.addEventListener('click', () => {
 
     checkingAnswer1();
+    getScore();
 
     // divTask1.style.display = 'none';
     // divTask2.style.display = 'flex';
@@ -174,7 +183,7 @@ btnCheck.addEventListener('click', () => {
 btnCheck2.addEventListener('click', () => {
 
     checkingAnswer2();
-
+    getScore();
     // divTask1.style.display = 'flex';
     // divTask2.style.display = 'none';
 
@@ -183,3 +192,4 @@ btnCheck2.addEventListener('click', () => {
     radioAnswer3.checked = false;
 
 })
+score.innerHTML = localStorage.getItem('scoreUser');
