@@ -41,7 +41,9 @@ function checkingAnswer1(){
         createA.innerHTML = '+1'
 
         checkAnswer.appendChild(createA);
-        checkAnswer.style.color = '#00FF5F';
+        checkAnswer.style.color = 'black';
+
+        createA.style.background = '#00FF5F'
 
         divTask1.style.display = 'none';
         divTask2.style.display = 'flex';
@@ -54,14 +56,17 @@ function checkingAnswer1(){
         
         createA.innerHTML = 'Cow is the wrong answer!'
         checkAnswer.appendChild(createA);
-        checkAnswer.style.color = '#FF0000';
+        checkAnswer.style.color = 'white';
+        createA.style.background = '#FF0000'
+        
     }
 
     if(radioAnswer3.checked){
         
         createA.innerHTML = 'Rat is the wrong answer!'
         checkAnswer.appendChild(createA);
-        checkAnswer.style.color = '#FF0000';
+        checkAnswer.style.color = 'white';
+        createA.style.background = '#FF0000'
     }
 
     myInterval = setInterval(() => {
@@ -156,7 +161,7 @@ btnCheck.addEventListener('click', () => {
     // divTask1.style.display = 'none';
     // divTask2.style.display = 'flex';
 
-    
+
 
 })
 

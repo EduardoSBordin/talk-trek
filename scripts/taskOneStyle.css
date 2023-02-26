@@ -188,10 +188,18 @@ input[type=radio]:checked{
 #checkAnswer{
     color: white;
     text-align: center;
-    margin-top: -10px;
+    margin-top: -9px;
     font-family: 'Rubik', sans-serif;
-    font-size: 14pt;
+    font-size: 12pt;
     text-transform: uppercase;
+}
+#spanScore{
+    /* background: rgba(255, 255, 255, 0); */
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 0px 0px 20px 20px;
 }
 #score, #scoreTxt{
 
