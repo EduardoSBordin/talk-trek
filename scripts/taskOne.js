@@ -15,6 +15,7 @@ const btnCheck = document.querySelector('#btnCheck');
 btnCheck.disabled = true;
 
 const btnCheck2 = document.querySelector('#btnCheck2');
+btnCheck2.disabled = true;
 
 const checkAnswer = document.querySelector('#checkAnswer');
 
@@ -25,8 +26,9 @@ let scoreNum = 0;
 
 function btnC(){
 
-    if(radioAnswer1 || radioAnswer2 || radioAnswer3){
+    if(radioAnswer1 || radioAnswer2 || radioAnswer3 || radioAnswer4 || radioAnswer5 || radioAnswer6){
         btnCheck.disabled = false;
+        btnCheck2.disabled = false;
     }
 }
 document.querySelector('body').addEventListener('click', () => {btnC()});
@@ -42,8 +44,7 @@ function checkingAnswer1(){
 
         checkAnswer.appendChild(createA);
         checkAnswer.style.color = 'black';
-
-        createA.style.background = '#00FF5F'
+        createA.style.background = '#00FF5F';
 
         divTask1.style.display = 'none';
         divTask2.style.display = 'flex';
@@ -57,7 +58,7 @@ function checkingAnswer1(){
         createA.innerHTML = 'Cow is the wrong answer!'
         checkAnswer.appendChild(createA);
         checkAnswer.style.color = 'white';
-        createA.style.background = '#FF0000'
+        createA.style.background = '#FF0000';
         
     }
 
@@ -66,7 +67,7 @@ function checkingAnswer1(){
         createA.innerHTML = 'Rat is the wrong answer!'
         checkAnswer.appendChild(createA);
         checkAnswer.style.color = 'white';
-        createA.style.background = '#FF0000'
+        createA.style.background = '#FF0000';
     }
 
     myInterval = setInterval(() => {
@@ -105,7 +106,8 @@ function checkingAnswer2(){
         createA.innerHTML = '+1'
 
         checkAnswer.appendChild(createA);
-        checkAnswer.style.color = '#00FF5F';
+        checkAnswer.style.color = 'black';
+        createA.style.background = '#00FF5F';
 
         divTask1.style.display = 'flex';
         divTask2.style.display = 'none';
@@ -118,14 +120,16 @@ function checkingAnswer2(){
         
         createA.innerHTML = 'Bird is the wrong answer!'
         checkAnswer.appendChild(createA);
-        checkAnswer.style.color = '#FF0000';
+        checkAnswer.style.color = 'white';
+        createA.style.background = '#FF0000';
     }
 
     if(radioAnswer4.checked){
         
         createA.innerHTML = 'Monkey is the wrong answer!'
         checkAnswer.appendChild(createA);
-        checkAnswer.style.color = '#FF0000';
+        checkAnswer.style.color = 'white';
+        createA.style.background = '#FF0000';
     }
 
     myInterval = setInterval(() => {
@@ -136,18 +140,18 @@ function checkingAnswer2(){
             clearInterval(myInterval);
             createA.remove();
 
-            btnCheck.style.background = '#0089EC';
-            btnCheck.innerHTML = 'Check';
-            btnCheck.style.width = '100px';
-            btnCheck.style.transform = 'scale(1)';
-            btnCheck.disabled = false;
+            btnCheck2.style.background = '#0089EC';
+            btnCheck2.innerHTML = 'Check';
+            btnCheck2.style.width = '100px';
+            btnCheck2.style.transform = 'scale(1)';
+            btnCheck2.disabled = false;
         }else{
             
-            btnCheck.style.background = '#003B66';
-            btnCheck.innerHTML = 'Checking...';
-            btnCheck.style.width = '120px';
-            btnCheck.style.transform = 'scale(1.2)';
-            btnCheck.disabled = true;
+            btnCheck2.style.background = '#003B66';
+            btnCheck2.innerHTML = 'Checking...';
+            btnCheck2.style.width = '120px';
+            btnCheck2.style.transform = 'scale(1.2)';
+            btnCheck2.disabled = true;
         }
         console.log(timerCheckAnswer)
     }, speedTimerCheckAnswer)
@@ -161,7 +165,9 @@ btnCheck.addEventListener('click', () => {
     // divTask1.style.display = 'none';
     // divTask2.style.display = 'flex';
 
-
+    radioAnswer4.checked = false;
+    radioAnswer5.checked = false;
+    radioAnswer6.checked = false;
 
 })
 
