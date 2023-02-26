@@ -8,6 +8,10 @@ function getUserName(){
 
 
     spanUsername.innerHTML = localStorage.getItem('userName');
+
+    if(spanUsername || getName){
+        getName.remove();
+    }
 }
 
 spanUsername.innerHTML = localStorage.getItem('userName');

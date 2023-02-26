@@ -102,8 +102,8 @@ function checkingAnswer2(){
         checkAnswer.appendChild(createA);
         checkAnswer.style.color = '#00FF5F';
 
-        divTask1.style.display = 'none';
-        divTask2.style.display = 'flex';
+        divTask1.style.display = 'flex';
+        divTask2.style.display = 'none';
 
         scoreNum += 1;
         score.innerHTML = scoreNum;
@@ -156,14 +156,16 @@ btnCheck.addEventListener('click', () => {
     // divTask1.style.display = 'none';
     // divTask2.style.display = 'flex';
 
+    
+
 })
 
 btnCheck2.addEventListener('click', () => {
 
     checkingAnswer2();
 
-    divTask1.style.display = 'flex';
-    divTask2.style.display = 'none';
+    // divTask1.style.display = 'flex';
+    // divTask2.style.display = 'none';
 
     radioAnswer1.checked = false;
     radioAnswer2.checked = false;

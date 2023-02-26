@@ -14,13 +14,19 @@ body{
     width: 100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
 }
 #title{
     color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 20pt;
     padding: 10px;
+    margin: auto;
+}
+#divBtns{
+    background: rgba(255, 255, 255, 0);
     margin: auto;
 }
 h1{
@@ -38,9 +44,13 @@ h1{
 }
 #divTitle{
     background: rgba(255, 0, 0, 0);
-
+    margin: auto;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 #divInf{
     background: rgba(0, 0, 150, 0);
@@ -183,10 +193,26 @@ input[type=radio]:checked{
     font-size: 14pt;
     text-transform: uppercase;
 }
-#score{
+#score, #scoreTxt{
 
     color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 16pt;
     margin: auto;
+}
+.iconHome{
+    background: none;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    font-size: 16pt;
+    transition: .4s;
+    padding: 6px;
+    border-radius: 100%;
+}
+.iconHome:hover{
+
+    transform: scale(1.1);
+    background: #0089EC;
+    color: white;
 }
