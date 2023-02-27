@@ -29,32 +29,6 @@ let speedTimerCheckAnswer = 150;
 let myInterval;
 let scoreNum = 0;
 
-function btnC(){
-
-    if(radioAnswer1.checked || radioAnswer2.checked || radioAnswer3.checked || radioAnswer4.checked || radioAnswer5.checked || radioAnswer6.checked){
-        btnCheck.disabled = false;
-        btnCheck2.disabled = false;
-
-        // alert();
-    } 
-    // else{
-    //     btnCheck.disabled = true;
-    //     btnCheck2.disabled = true;
-    // }
-
-}
-
-document.querySelector('#divRadiosAnswers').addEventListener('click', () => {
-    btnC();
-})
-document.querySelector('#divRadiosAnswers2').addEventListener('click', () => {
-    btnC();
-})
-
-document.querySelector('#divRadiosAnswers').addEventListener('mouseenter', () => {
-    console.log('OK');
-})
-
 function checkingAnswer1(){
 
     const createA = document.createElement('span');
@@ -103,8 +77,9 @@ function checkingAnswer1(){
 
             btnCheck.style.background = '#0089EC';
             btnCheck.innerHTML = 'Check';
-            btnCheck.style.width = '100px';
-            btnCheck.style.transform = 'scale(1)';
+            // btnCheck.style.display = 'flex';
+            // btnCheck.style.width = '100px';
+            // btnCheck.style.transform = 'scale(1)';
             
             timerCheckAnswer = 10;
             clearInterval(myInterval);
@@ -114,9 +89,10 @@ function checkingAnswer1(){
             btnCheck.disabled = true;
 
             btnCheck.style.background = 'black';
-            btnCheck.innerHTML = 'Disabled';
-            btnCheck.style.width = '120px';
-            btnCheck.style.transform = 'scale(1.2)';
+            btnCheck.innerHTML = 'Check';
+            // btnCheck.style.display = 'none';
+            // btnCheck.style.width = '120px';
+            // btnCheck.style.transform = 'scale(1.2)';
         }
         console.log(timerCheckAnswer)
     }, speedTimerCheckAnswer)
@@ -174,16 +150,18 @@ function checkingAnswer2(){
 
             btnCheck2.style.background = '#0089EC';
             btnCheck2.innerHTML = 'Check';
-            btnCheck2.style.width = '100px';
-            btnCheck2.style.transform = 'scale(1)';
+            // btnCheck2.style.display = 'flex';
+            // btnCheck2.style.width = '100px';
+            // btnCheck2.style.transform = 'scale(1)';
         }else if(timerCheckAnswer >= 1){
             
             btnCheck2.disabled = true;
 
             btnCheck2.style.background = 'black';
-            btnCheck2.innerHTML = 'Disabled';
-            btnCheck2.style.width = '120px';
-            btnCheck2.style.transform = 'scale(1.2)';
+            btnCheck2.innerHTML = 'Check';
+            // btnCheck2.style.display = 'none';
+            // btnCheck2.style.width = '120px';
+            // btnCheck2.style.transform = 'scale(1.2)';
         }
         console.log(timerCheckAnswer)
     }, speedTimerCheckAnswer)
@@ -235,3 +213,25 @@ btnRemoveLastScore.addEventListener('click', () => {
     localStorage.clear();
     scoreNum = 0;
 });
+
+function btnC(){
+
+    if(radioAnswer1.checked || radioAnswer2.checked || radioAnswer3.checked || radioAnswer4.checked || radioAnswer5.checked || radioAnswer6.checked){
+        btnCheck.disabled = false;
+        btnCheck2.disabled = false;
+
+        // alert();
+    } 
+    // else{
+    //     btnCheck.disabled = true;
+    //     btnCheck2.disabled = true;
+    // }
+
+}
+
+document.querySelector('#divRadiosAnswers').addEventListener('click', () => {
+    btnC();
+})
+document.querySelector('#divRadiosAnswers2').addEventListener('click', () => {
+    btnC();
+})
