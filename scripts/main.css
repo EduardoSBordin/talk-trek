@@ -8,6 +8,28 @@ body{
     display: flex;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #21333D;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0089EC;
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #004475;
+  }
+
 #container{
 
     background:rgba(128, 128, 128, 0);
