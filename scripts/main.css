@@ -42,28 +42,27 @@ body{
     color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 20pt;
-    margin: 0px;
     padding: 10px;
+    margin: auto;
+    margin-left: 0px;
 }
 h1{
     font-family: 'Rubik', sans-serif;
     font-size: 22pt;
     color: white;
     text-align: center;
-
-    background: #32424F;
-    width: 500px;
-    margin: 0px;
+    background: #32424f00;
+    width: 300px;
     padding: 15px;
-    border-radius: 50px;
-    border: 2px solid #0089EC;
+    border-radius: 0px;
+    border-bottom: 2px solid #0089EC;
+    margin: auto;
 }
 #divTitle{
     background: rgba(255, 0, 0, 0);
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 #divInf{
     background: rgba(132, 132, 175, 0);
@@ -71,6 +70,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 10px;
 }
 #divinfAboutTaks{
     background: rgba(0, 128, 0, 0);
@@ -136,4 +136,33 @@ h1{
 #btnLinkViewTask:hover{
     background: #41affd;
     transform: scale(1.1);
+}
+#btnFlag{
+    width: 45px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0);
+
+    border: none;
+
+    cursor: pointer;
+    margin: 5px;
+}
+#imgFlag{
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    margin: auto;
+
+    background: rgba(255, 255, 255, 0);
+
+    filter: grayscale(0%);
+    transition: .4s;
+}
+#imgFlag:hover{
+
+    filter: grayscale(70%);
 }
