@@ -102,9 +102,16 @@ h1{
     border-radius: 20px;
     margin: auto;
     position: relative;
+
+    
 }
 #divText-btn-Task1{
     background: #32424F ;
+    /* background: rgba(50, 66, 79, 0.56); */
+/* border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(14.1px);
+-webkit-backdrop-filter: blur(14.1px); */
     width: 300px;
     height: 270px;
     margin: auto;
@@ -113,6 +120,8 @@ h1{
 
     display: flex;
     flex-direction: column;
+
+
 }
 #textTask{
 
@@ -173,14 +182,14 @@ h1{
     background: rgba(0, 128, 0, 0);
     width: 100%;
     height: 400px;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 #mainIMG{
-    width: 70%;
-    height: 80%;
+    width: 50%;
+    height: 90%;
     max-width: auto;
     border-radius: 25px;
 
