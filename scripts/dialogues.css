@@ -109,14 +109,14 @@ h1{
 }
 
 #divText-btn-Task1{
-    background: #32424F ;
     /* background: rgba(50, 66, 79, 0.56); */
 /* border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(14.1px);
 -webkit-backdrop-filter: blur(14.1px); */
+    background: #32424F ;
     width: 550px;
-    height: 450px;
+    height: auto;
     padding: 20px;
     border-radius: 20px;
     display: flex;
@@ -126,7 +126,7 @@ backdrop-filter: blur(14.1px);
 #divText-btn-Task2{
     background: #0089EC;
     width: 550px;
-    height: 450px;
+    height: auto;
     padding: 20px;
     border-radius: 20px;
     display: flex;
