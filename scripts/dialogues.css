@@ -1,0 +1,209 @@
+body{
+
+    background: #21333D;
+    /* background: #8ed8ff; */
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #21333D;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0089EC;
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #004475;
+  }
+
+#container{
+
+    background:rgba(128, 128, 128, 0);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#title{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20pt;
+    padding: 10px;
+    margin: auto;
+    margin-left: 0px;
+}
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 22pt;
+    color: white;
+    text-align: center;
+    background: #32424f00;
+    width: 200px;
+    padding: 15px;
+    border-radius: 0px;
+    border-bottom: 2px solid #0089EC;
+    margin: auto;
+    margin-left: 50px;
+}
+#divTitle{
+    background: rgba(255, 0, 0, 0);
+
+    display: flex;
+    flex-wrap: wrap;
+}
+#divInf{
+    background: rgba(132, 132, 175, 0);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+#divinfAboutTaks{
+    background: rgba(0, 128, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+}
+#divTxtNT{
+    background: rgba(0, 0, 0, 0);
+    width: 600px;
+    height: auto;
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: row;
+}
+#divTxtT{
+    background: rgba(0, 0, 0, 0);
+    width: 600px;
+    height: auto;
+    margin-left: 10px;
+
+    display: none;
+    flex-direction: column;
+}
+
+#divText-btn-Task1{
+    background: #32424F ;
+    /* background: rgba(50, 66, 79, 0.56); */
+/* border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(14.1px);
+-webkit-backdrop-filter: blur(14.1px); */
+    width: 550px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#textTask{
+
+    color: white;
+    margin-top: 100px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 10pt;
+    letter-spacing: 1px;
+
+}
+#btnLinkViewTxt, #closeModal{
+
+    background: #0089EC;
+    color: white;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: .4s;
+    border: none;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12pt;
+    cursor: pointer;
+}
+#btnLinkViewTxt:hover, #closeModal:hover{
+    background: #41affd;
+    transform: scale(1.1);
+}
+
+
+#backMain{
+    background: rgba(0, 128, 0, 0);
+    width: 100%;
+    height: 400px;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#mainIMG{
+    width: 50%;
+    height: 90%;
+    max-width: auto;
+    border-radius: 25px;
+
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#aboutUsLink{
+
+    color: grey;
+    position: absolute;
+    margin-left: -350px;
+    margin-top: 220px;
+    background: white;
+    text-decoration: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+}
+.iconHome{
+    background: none;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    font-size: 16pt;
+    transition: .4s;
+    padding: 6px;
+    border-radius: 100%;
+}
+.iconHome:hover{
+
+    transform: scale(1.1);
+    background: #0089EC;
+    color: white;
+}
+#divBtns{
+    background: rgba(255, 255, 255, 0);
+    margin: auto;
+}
+#btnHome{
+}

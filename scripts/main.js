@@ -1,18 +1,18 @@
-const spanUsername = document.querySelector('#spanUsername');
+// const spanUsername = document.querySelector('#spanUsername');
 
-function getUserName(){
-    const getName = prompt('What is your name ?');
+// function getUserName(){
+//     //const getName = prompt('What is your name ?');
 
-    localStorage.setItem('userName', getName);
+//     localStorage.setItem('userName', getName);
 
 
 
-    spanUsername.innerHTML = localStorage.getItem('userName');
+//     spanUsername.innerHTML = localStorage.getItem('userName');
 
-    if(spanUsername || getName){
-        getName.remove();
-    }
-}
+//     if(spanUsername || getName){
+//         getName.remove();
+//     }
+// }
 
-spanUsername.innerHTML = localStorage.getItem('userName');
-getUserName();
+// spanUsername.innerHTML = localStorage.getItem('userName');
+// getUserName();
