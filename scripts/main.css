@@ -69,18 +69,33 @@ h1.active{
     border-bottom: 2px solid #21333D;
 }
 #divTitle{
-    background: rgba(255, 0, 0, 0);
-
+    background: rgba(0, 119, 255, 0.192);
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: -0px;
+    width: 100%;
+
 }
 #divInf{
-    background: rgba(132, 132, 175, 0);
+    /* background: rgb(2, 2, 153); */
+
+    /* background: rgba(50, 66, 79, 0.56); */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.1px);
+    -webkit-backdrop-filter: blur(14.1px);
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    margin-left: 0px;
+    position: fixed;
+    margin-top: -50%;
 }
 #divinfAboutTaks{
     background: rgba(0, 128, 0, 0);
@@ -255,6 +270,7 @@ backdrop-filter: blur(14.1px);
     height: 25px;
     margin: auto;
     margin-left: 10px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
