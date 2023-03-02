@@ -112,8 +112,15 @@ h1.active{
 
     
 }
-#divText-btn-Task1{
+.divTBT1, .divTBT2, .divTBT3,
+.divTBT4, .divTBT5, .divTBT6{
     background: #32424F ;
+    transition: .4s;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#divText-btn-Task1{
+    /* background: #32424F ; */
     /* background: rgba(50, 66, 79, 0.56); */
 /* border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -127,17 +134,36 @@ backdrop-filter: blur(14.1px);
 
     display: flex;
     flex-direction: column;
+    
 
+}
+.divTBT1.active, .divTBT2.active, .divTBT3.active,
+.divTBT4.active, .divTBT5.active, .divTBT6.active{
 
+    background: rgb(255, 255, 255);
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    color: rgb(34, 34, 34);
+    /* transform: scale(1.1); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 #textTask{
 
-    color: white;
     margin-top: 100px;
     text-align: center;
     font-size: 22pt;
     letter-spacing: 1px;
 
+}
+.txtTask1, .txtTask2, .txtTask3,
+.txtTask4, .txtTask5, .txtTask6{
+
+    color: white;
+    transition: .4s;
+}
+.txtTask1.active, .txtTask2.active, .txtTask3.active,
+.txtTask4.active, .txtTask5.active, .txtTask6.active{
+
+    color: #21333D;
 }
 #btnLinkViewTask{
 
