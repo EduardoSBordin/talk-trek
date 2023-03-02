@@ -82,7 +82,8 @@ h1.active{
 }
 #divInf{
 
-    background: rgba(27, 64, 98, 0.527);
+    /* background: rgba(27, 64, 98, 0.527); */
+    background: #32424f86;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9px);
