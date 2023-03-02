@@ -49,14 +49,16 @@ body.active{
     font-family: 'Rubik', sans-serif;
     font-size: 20pt;
     padding: 10px;
-    margin: auto;
     margin-left: 0px;
+    margin-top: 0px;
+}
+#title.active{
+    color: #004475;
 }
 h1{
     font-family: 'Rubik', sans-serif;
     font-size: 22pt;
     color: white;
-    text-align: center;
     background: #32424f00;
     width: 300px;
     padding: 15px;
@@ -69,33 +71,45 @@ h1.active{
     border-bottom: 2px solid #21333D;
 }
 #divTitle{
-    background: rgba(0, 119, 255, 0.192);
+    background: rgba(0, 119, 255, 0);
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    margin-top: -0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-
+    height: 100px;
 }
 #divInf{
-    /* background: rgb(2, 2, 153); */
 
-    /* background: rgba(50, 66, 79, 0.56); */
-    border-radius: 16px;
+    background: rgba(27, 64, 98, 0.527);
+    border-radius: 0px 0px 20px 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(14.1px);
-    -webkit-backdrop-filter: blur(14.1px);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(27, 64, 98, 0.3);
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 200px;
+
+    width: 500px;
+    height: 40px;
     margin-left: 0px;
+    margin-top: -30px;
     position: fixed;
-    margin-top: -50%;
+    padding: 20px;
+    z-index: 1;
+}
+#divInf.active{
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(8.7px);
+    -webkit-backdrop-filter: blur(8.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 #divinfAboutTaks{
     background: rgba(0, 128, 0, 0);
@@ -210,13 +224,13 @@ backdrop-filter: blur(14.1px);
     border: none;
 
     cursor: pointer;
-    margin: 5px;
+    margin: 15px;
+    margin-top: -15px;
 }
 #imgFlag{
     width: 40px;
     height: 30px;
     border-radius: 5px;
-    margin: auto;
 
     background: rgba(255, 255, 255, 0);
 
@@ -268,9 +282,8 @@ backdrop-filter: blur(14.1px);
     transition: .4s;
     width: 28px;
     height: 25px;
-    margin: auto;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: -35px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -35,6 +35,10 @@ let txtTask4 = document.querySelector('.txtTask4');
 let txtTask5 = document.querySelector('.txtTask5');
 let txtTask6 = document.querySelector('.txtTask6');
 
+let divInf = document.querySelector('#divInf');
+
+let title = document.querySelector('#title');
+
 function checkTheme(){
 
     getDivTBT1.classList.toggle('active');
@@ -50,11 +54,15 @@ function checkTheme(){
     txtTask4.classList.toggle('active');
     txtTask5.classList.toggle('active');
     txtTask6.classList.toggle('active');
+
+    divInf.classList.toggle('active');
+
+    title.classList.toggle('active');
 }
 
 btnWhiteMode.addEventListener('click', ()=>{
 
    getBody.classList.toggle('active');
-   getH1.classList.toggle('active');
+   //getH1.classList.toggle('active');
     checkTheme();
 });
