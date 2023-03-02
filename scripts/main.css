@@ -6,8 +6,11 @@ body{
     border: 0px;
     font-family: 'Rubik', sans-serif;
     display: flex;
+    transition: .4s;
 }
-
+body.active{
+    background: whitesmoke;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
@@ -60,6 +63,10 @@ h1{
     border-radius: 0px;
     border-bottom: 2px solid #0089EC;
     margin: auto;
+}
+h1.active{
+    color: #21333D;
+    border-bottom: 2px solid #21333D;
 }
 #divTitle{
     background: rgba(255, 0, 0, 0);
@@ -147,6 +154,7 @@ backdrop-filter: blur(14.1px);
 }
 #btnLinkViewTask:hover{
     background: #41affd;
+    
     transform: scale(1.1);
 }
 #btnFlag{
@@ -226,6 +234,6 @@ backdrop-filter: blur(14.1px);
     justify-content: center;
 }
 #btnWhiteMode:hover{
-    color: white;
+    color: rgb(26, 26, 26);
     transform: scale(1.1);
 }

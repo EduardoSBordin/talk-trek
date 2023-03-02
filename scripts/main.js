@@ -16,3 +16,14 @@
 
 // spanUsername.innerHTML = localStorage.getItem('userName');
 // getUserName();
+const btnWhiteMode = document.querySelector('#btnWhiteMode');
+
+const getBody = document.querySelector('body');
+const getH1 = document.querySelector('h1');
+
+btnWhiteMode.addEventListener('click', ()=>{
+
+   getBody.classList.toggle('active');
+   getH1.classList.toggle('active');
+
+});
