@@ -1,6 +1,6 @@
 body{
 
-    background: #21333D;
+    background: #21333d00;
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -8,9 +8,9 @@ body{
     display: flex;
     transition: .4s;
 }
-body.active{
+/* body.active{
     background: whitesmoke;
-}
+} */
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
@@ -51,6 +51,7 @@ body.active{
     padding: 10px;
     margin-left: 0px;
     margin-top: 0px;
+    transition: .4s;
 }
 #title.active{
     color: #004475;

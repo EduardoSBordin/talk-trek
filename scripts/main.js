@@ -1,24 +1,7 @@
-// const spanUsername = document.querySelector('#spanUsername');
-
-// function getUserName(){
-//     //const getName = prompt('What is your name ?');
-
-//     localStorage.setItem('userName', getName);
-
-
-
-//     spanUsername.innerHTML = localStorage.getItem('userName');
-
-//     if(spanUsername || getName){
-//         getName.remove();
-//     }
-// }
-
-// spanUsername.innerHTML = localStorage.getItem('userName');
-// getUserName();
 const btnWhiteMode = document.querySelector('#btnWhiteMode');
 
 const getBody = document.querySelector('body');
+getBody.style.background = '#21333D';
 const getH1 = document.querySelector('h1');
 
 let getDivTBT1 = document.querySelector('.divTBT1');
@@ -38,6 +21,8 @@ let txtTask6 = document.querySelector('.txtTask6');
 let divInf = document.querySelector('#divInf');
 
 let title = document.querySelector('#title');
+
+let verifyTheme = 0;
 
 function checkTheme(){
 
@@ -60,9 +45,32 @@ function checkTheme(){
     title.classList.toggle('active');
 }
 
+function localStorageThem(){
+
+    localStorage.setItem('getVerifyTheme', verifyTheme);
+    localStorage.getItem('getVerifyTheme');
+
+    verifyTheme++;
+
+    if(verifyTheme <= 1){
+
+        getBody.style.background = '#21333D';
+        console.log(verifyTheme);
+    }else{
+        verifyTheme = 0;
+
+        getBody.style.background = 'whitesmoke';
+        console.log(verifyTheme);
+    }
+
+    //console.log(verifyTheme);
+}
+localStorageThem();
+
 btnWhiteMode.addEventListener('click', ()=>{
 
-   getBody.classList.toggle('active');
+//    getBody.classList.toggle('active');
    //getH1.classList.toggle('active');
     checkTheme();
+    localStorageThem();
 });
