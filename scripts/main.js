@@ -119,6 +119,11 @@ btnWhiteMode.addEventListener('click', ()=>{
 
 function lG(){
 
+
+}
+
+lG();
+
 verifyTheme = localStorage.getItem('getVerifyTheme');
 
 getBody.style.background = localStorage.getItem('getBodyTheme');
@@ -140,6 +145,3 @@ txtTask3.style.color = localStorage.getItem('txtTask3');
 txtTask4.style.color = localStorage.getItem('txtTask4');
 txtTask5.style.color = localStorage.getItem('txtTask5');
 txtTask6.style.color = localStorage.getItem('txtTask6');
-}
-
-lG();
