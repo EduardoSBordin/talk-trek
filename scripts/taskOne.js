@@ -210,7 +210,7 @@ score.innerHTML = localStorage.getItem('scoreUser');
 btnRemoveLastScore.addEventListener('click', () => {
 
     score.innerHTML ='0';
-    localStorage.clear();
+    localStorage.removeItem('scoreUser');
     scoreNum = 0;
 });
 

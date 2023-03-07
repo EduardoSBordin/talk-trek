@@ -27,18 +27,6 @@ let verifyTheme = 0;
 
 console.log(verifyTheme);
 
-function checkTheme(){
-
-
-    // txtTask1.classList.toggle('active');
-    // txtTask2.classList.toggle('active');
-    // txtTask3.classList.toggle('active');
-    // txtTask4.classList.toggle('active');
-    // txtTask5.classList.toggle('active');
-    // txtTask6.classList.toggle('active');
-
-}
-
 function localStorageThem(){
 
     let arrayColor = ['#21333D', 'whitesmoke', '#32424F', '#32424f86', 'red', 'rgba(255, 255, 255, 0.25)'];
@@ -129,6 +117,8 @@ btnWhiteMode.addEventListener('click', ()=>{
     verifyTheme = localStorage.getItem('getVerifyTheme');
 });
 
+function lG(){
+
 verifyTheme = localStorage.getItem('getVerifyTheme');
 
 getBody.style.background = localStorage.getItem('getBodyTheme');
@@ -150,3 +140,6 @@ txtTask3.style.color = localStorage.getItem('txtTask3');
 txtTask4.style.color = localStorage.getItem('txtTask4');
 txtTask5.style.color = localStorage.getItem('txtTask5');
 txtTask6.style.color = localStorage.getItem('txtTask6');
+}
+
+lG();
