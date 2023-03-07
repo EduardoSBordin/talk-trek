@@ -45,7 +45,7 @@ body{
     justify-content: center;
 }
 #title{
-    color: white;
+    /* color: white; */
     font-family: 'Rubik', sans-serif;
     font-size: 20pt;
     padding: 10px;
@@ -84,7 +84,7 @@ h1.active{
 #divInf{
 
     /* background: rgba(27, 64, 98, 0.527); */
-    background: #32424f86;
+    /* background: #32424f86; */
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     /* backdrop-filter: blur(9px); */
@@ -188,7 +188,7 @@ backdrop-filter: blur(14.1px);
 .txtTask1, .txtTask2, .txtTask3,
 .txtTask4, .txtTask5, .txtTask6{
 
-    color: white;
+    /* color: white; */
     transition: .4s;
 }
 .txtTask1.active, .txtTask2.active, .txtTask3.active,
