@@ -35,32 +35,6 @@ function localStorageThem(){
 
     if(verifyTheme <= 1){
 
-        getBody.style.background = arrayColor[0];
-
-        getDivTBT1.style.background = arrayColor[2];
-        getDivTBT2.style.background = arrayColor[2];
-        getDivTBT3.style.background = arrayColor[2];
-        getDivTBT4.style.background = arrayColor[2];
-        getDivTBT5.style.background = arrayColor[2];
-        getDivTBT6.style.background = arrayColor[2];
-
-        divInf.style.background = arrayColor[3];
-        
-
-        title.style.color = arrayColor[1];
-
-        txtTask1.style.color = arrayColor[1];
-        txtTask2.style.color = arrayColor[1];
-        txtTask3.style.color = arrayColor[1];
-        txtTask4.style.color = arrayColor[1];
-        txtTask5.style.color = arrayColor[1];
-        txtTask6.style.color = arrayColor[1];
-
-        console.log(verifyTheme);
-    }else{
-
-        verifyTheme = 0;
-
         getBody.style.background = arrayColor[1];
 
         getDivTBT1.style.background = arrayColor[1];
@@ -71,7 +45,7 @@ function localStorageThem(){
         getDivTBT6.style.background = arrayColor[1];
 
         divInf.style.background = arrayColor[5];
-        //divInf.style.backdropFilter = `blur(2px)`;
+        
 
         title.style.color = arrayColor[0];
 
@@ -81,6 +55,32 @@ function localStorageThem(){
         txtTask4.style.color = arrayColor[0];
         txtTask5.style.color = arrayColor[0];
         txtTask6.style.color = arrayColor[0];
+
+        console.log(verifyTheme);
+    }else{
+
+        verifyTheme = 0;
+
+        getBody.style.background = arrayColor[0];
+
+        getDivTBT1.style.background = arrayColor[2];
+        getDivTBT2.style.background = arrayColor[2];
+        getDivTBT3.style.background = arrayColor[2];
+        getDivTBT4.style.background = arrayColor[2];
+        getDivTBT5.style.background = arrayColor[2];
+        getDivTBT6.style.background = arrayColor[2];
+
+        divInf.style.background = arrayColor[3];
+        //divInf.style.backdropFilter = `blur(2px)`;
+
+        title.style.color = arrayColor[1];
+
+        txtTask1.style.color = arrayColor[1];
+        txtTask2.style.color = arrayColor[1];
+        txtTask3.style.color = arrayColor[1];
+        txtTask4.style.color = arrayColor[1];
+        txtTask5.style.color = arrayColor[1];
+        txtTask6.style.color = arrayColor[1];
 
         console.log(verifyTheme);
     }
